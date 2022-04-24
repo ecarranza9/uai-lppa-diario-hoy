@@ -1,68 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-         table,
-         th,
-         td {
-         border: 1px solid black;
-         border-collapse: collapse;
-         }
-      </style>
-      <title>Diario Hoy</title>
-   </head>
-   <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  <title>Diario Hoy</title>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <ul>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">Diario HOY</a></li>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">IA</a></li>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">Infraestructura</a></li>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">Network</a></li>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">Seguridad</a></li>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">Opinion</a></li>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">Empresas</a></li>
+        <li style="display: inline-block; margin-left: 25px;"><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <article>
+    <div>
+      <h1>Red Hat OpenShift Platform Plus añade Red Hat OpenShift Data Foundation, proporcionando un stack completo y
+        multicloud de Kubernetes.</h1>
+    </div>
+    <section>
+      <p>
+        Red Hat ha anunciado que Red Hat OpenShift Data Foundation se incorpora a Red Hat OpenShift Platform Plus,
+        llevando los servicios de datos, incluido el almacenamiento definido por software, a su plataforma empresarial
+        de Kubernetes. Red Hat OpenShift Platform Plus proporciona un stack completo y multicloud de Kubernetes, para
+        profesionales de DevSecOps y del desarrollo de aplicaciones. La incorporación de Red Hat OpenShift Data
+        Foundation ofrece a los desarrolladores una plataforma de datos consistente con almacenamiento persistente que
+        puede abarcar nubes e infraestructuras, combinada con capacidades de gestión de datos para los equipos de
+        operaciones de TI.
+      </p>
+      <p>Kubernetes es el estándar de facto en la orquestación de contenedores y proporciona un potente motor para
+        llevar a cabo la orquestación a escala, pero requiere componentes adicionales para satisfacer completamente las
+        necesidades de la empresa para construir y ejecutar aplicaciones modernas. «Red Hat OpenShift Platform Plus
+        reúne las capacidades necesarias que proporcionan una forma coherente de asegurar, proteger y gestionar las
+        aplicaciones a lo largo del ciclo de vida del software en los clústeres de Kubernetes, incluso en diferentes
+        infraestructuras de nube», escribe Red Hat en un comunicado.</p>
+    </section>
+    <section>
+      <h2>Productos de Red Hat OpenShift PLUS</h2>
+      <ol>
+        <li>Red Hat OpenShift Container Platform</li>
+        <li>Red Hat Advanced Cluster Security for Kubernetes</li>
+        <li>Red Hat Advanced Cluster Management for Kubernetes</li>
+        <li>Red Hat Quay</li>
+        <li>Red Hat OpenShift Data Foundation Essentials</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Formulario de Contacto</h2>
       <div>
-         <nav>
-            <ul>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">Diario HOY</a></li>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">IA</a></li>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">Infraestructura</a></li>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">Network</a></li>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">Seguridad</a></li>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">Opinion</a></li>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">Empresas</a></li>
-               <li style="display: inline-block; margin-left: 25px;"><a href="#">Contacto</a></li>
-            </ul>
-         </nav>
+        <form>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" minlength="2" maxlength="15" required />
+          </div>
+          <div>
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text" minlength="2" maxlength="15" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" />
+          </div>
+          <div>
+            <label for="telefono">Telefono</label>
+            <input id="telefono" type="text" minlength="10" maxlength="10" pattern="[0-9]+" />
+          </div>
+          <div>
+            <label for="products">Seleccione un producto de interes Red Hat</label>
+            <select id="products">
+              <option value="id1">OpenShit Container Platform</option>
+              <option value="id2" selected>OpenShit Advanced Cluster Security</option>
+              <option value="id3">OpenShit Advanced Cluster Management</option>
+              <option value="id4">Quay</option>
+              <option value="id5">OpenShit Data Foundation</option>
+            </select>
+          </div>
+          <div>
+            <label>Fecha</label>
+            <input type="date" required />
+          </div>
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+          <div>
+            <button type="reset">Resetear Form</button>
+          </div>
+        </form>
       </div>
-      <article>
-         <div>
-            <h1>Red Hat OpenShift Platform Plus añade Red Hat OpenShift Data Foundation, proporcionando un stack completo y
-               multicloud de Kubernetes.
-            </h1>
-         </div>
-         <section>
-            <p>
-               Red Hat ha anunciado que Red Hat OpenShift Data Foundation se incorpora a Red Hat OpenShift Platform Plus,
-               llevando los servicios de datos, incluido el almacenamiento definido por software, a su plataforma empresarial
-               de Kubernetes. Red Hat OpenShift Platform Plus proporciona un stack completo y multicloud de Kubernetes, para
-               profesionales de DevSecOps y del desarrollo de aplicaciones. La incorporación de Red Hat OpenShift Data
-               Foundation ofrece a los desarrolladores una plataforma de datos consistente con almacenamiento persistente que
-               puede abarcar nubes e infraestructuras, combinada con capacidades de gestión de datos para los equipos de
-               operaciones de TI.
-            </p>
-            <p>Kubernetes es el estándar de facto en la orquestación de contenedores y proporciona un potente motor para
-               llevar a cabo la orquestación a escala, pero requiere componentes adicionales para satisfacer completamente las
-               necesidades de la empresa para construir y ejecutar aplicaciones modernas. «Red Hat OpenShift Platform Plus
-               reúne las capacidades necesarias que proporcionan una forma coherente de asegurar, proteger y gestionar las
-               aplicaciones a lo largo del ciclo de vida del software en los clústeres de Kubernetes, incluso en diferentes
-               infraestructuras de nube», escribe Red Hat en un comunicado.
-            </p>
-         </section>
-         <section>
-            <h2>Productos de Red Hat OpenShift PLUS</h2>
-            <ol>
-               <li>Red Hat OpenShift Container Platform</li>
-               <li>Red Hat Advanced Cluster Security for Kubernetes</li>
-               <li>Red Hat Advanced Cluster Management for Kubernetes</li>
-               <li>Red Hat Quay</li>
-               <li>Red Hat OpenShift Data Foundation Essentials</li>
-            </ol>
-         </section>
-      </article>
-   </body>
+    </section>
+  </article>
+</body>
+
+<script>
+
+</script>
+
 </html>
